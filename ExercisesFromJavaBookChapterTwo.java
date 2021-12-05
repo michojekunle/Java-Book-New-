@@ -1,4 +1,4 @@
-package JavaBookPack;
+package ChapterTwoExercises;
 
 import java.util.Scanner;
 
