@@ -1,5 +1,5 @@
-package JavaBookPack;
-//fig 3.1: Account.java
+package ChapterThree;
+
 // Account class that contains a name instance variable 
 // and methods to set and get its value
 public class Account {

@@ -1,4 +1,4 @@
-package JavaBookPack;
+package ChapterThree;
 //Fig 3.2: AccountTest.java
 //Creating and Manipulating an Account Object. 
 import java.util.Scanner;
