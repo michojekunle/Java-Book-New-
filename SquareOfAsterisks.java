@@ -1,38 +1,34 @@
-package ChapterSixExercises;
-// program printing square of of asterisks according to user's input
+package ChapterFourExercises;
+///Exercise 4.29 printing a square of asterisks
 import java.util.Scanner;
 
 public class SquareOfAsterisks 
 {
-	public static void main(String[] args)
+	public static void main(String[] args) 
 	{
-		Scanner sc = new Scanner(System.in);
+		Scanner scan = new Scanner(System.in);
+		int s, count = 1;
 		
-		System.out.println("Enter the side of your square: ");
-		int side = sc.nextInt();
+		System.out.println("Enter the side: ");
+		s = scan.nextInt();
 		
-		System.out.print(squareOfAsterisks(side));
-		System.out.print("-sided square printed.");
-		
-	}
-	
-	public static int squareOfAsterisks(int s)
-	{
-		if (s != 0 )
+		if(s <= 20)
 		{
-			System.out.println("Side is " + s + " and shape is below:\n ");
 			
-			for (int count = 1; count <= s * s; count++)
+			while(count <= s*s)
 			{
-				System.out.print("*");
-				
-				if (count % s*s == 0)
-					System.out.println();
+				System.out.print("*");	
+				int mul = 1;
+				while(mul<20)
+				{
+					if(count == mul*s)
+						System.out.println();
+					mul++;
+				}
+				count++;
 			}
 		}
-			System.out.println();
-		int count = s;
-		
-		return count; 
+		else
+			System.out.println("Input Extended programme ability.");
 	}
 }
