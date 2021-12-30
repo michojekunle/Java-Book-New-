@@ -13,14 +13,14 @@ public class ModifiedCompoundInterestProgram
 		System.out.printf("%s%20s%n", "Year" , "Amount on deposit");
 		
 		//calculate amount on deposit at the end of each year of ten years 
-		for(double rate = 0.05;rate<=0.10;rate += 0.01) 
+		for(double rate = 0.05;rate<=0.10 ;rate += 0.01) 
 		{
 			System.out.println("\nAt the rate of "+rate*100+"%: \n");
 			for (int year = 1; year <= 10; year++)
 			{
 				//calculate new amount for specified year
 				amount = principal * Math.pow(1.0 + rate, year);
-				
+			
 				//display the year and amount 
 				System.out.printf("%4d%,20.2f%n", year, amount);
 			}

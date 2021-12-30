@@ -8,31 +8,59 @@ public class CalculatingSales
 	{
 		Scanner scan = new Scanner(System.in);
 		
-		double productS = 0;
+		int productS = 0;
 		int quantity;
 		double sales = 0;
+		double product1 ;
+		double product2 ;
+		double product3 ;
+		double product4 ;
+		double product5 ;
+		
 		System.out.println("Welcome to Calculating Sales Program\n"
-				+ "Enter the number of product i.e. Product 1 then enter the quantity sold\nOR enter 0 to quit ");
+				+ "Enter 1 to continue \nOR enter 0 to quit ");
 		int inp = scan.nextInt();
 		
 		while (inp != 0)
 		{
-			System.out.println("Enter the product number: Product ");
+			System.out.println("Enter the product number 1 - 5: Product ");
 			productS = scan.nextInt();
 			
 			System.out.println("Quantity: ");
 			quantity = scan.nextInt();
 			
-			sales = sales + productS * quantity; 
+			switch (productS)
+			{
+				case 1: 
+					product1 = 2.98;
+					sales += (2.98 * quantity);
+				break;
+				
+				case 2: 
+					product2 = 4.50;
+					sales += (4.50*quantity);
+				break;
+				
+				case 3: 
+					product3 = 9.98;
+					sales += (9.98 * quantity);
+				break;
+				
+				case 4: 
+					product4 = 4.49;
+					sales += (4.49 * quantity);
+				break;
+				
+				case 5: 
+					product5 = 6.87;
+					sales += (6.87 * quantity);
+			}
+		
+			System.out.println("Enter 1 to continue or 0 to exit.");
+			inp = scan.nextInt();
+		
 		}
 		
-		
-		
-		switch (productS)
-		{
-			case 1:
-				productS = 2.98;
-		}
-		
+		System.out.printf("Total Sales = $%.2f",sales);
 	}
 }
